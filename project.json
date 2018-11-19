@@ -1,0 +1,23 @@
+{
+  "s3": {
+    "stage": {
+      "bucket": "projects-staging.seattletimes.com",
+      "path": "authorized-infliction"
+    },
+    "live": {
+      "bucket": "projects.seattletimes.com",
+      "path": "2017/apple-cup-predictions"
+    }
+  },
+  "title": "Apple Cup Pick 'em",
+  "description": "Got a prediction for the big game? See how you match up against our experts and other fans.",
+  "url": "http://projects.seattletimes.com/2017/apple-cup-pick-em/",
+  "image": "assets/AppleCup-logo2017.jpg",
+  "sheets": ["12WFkOBK9WHqHU27kopOtCp5tJHJ3I2VhZNfUNJ3pZQg"],
+  "production": true,
+  "embedded": false,
+  "teams": {
+    "home": "Huskies",
+    "opposing": "Cougars"
+  }
+}
