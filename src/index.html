@@ -107,15 +107,20 @@
     <%= t.include("partials/_ad.html", { type: "banner" }) %>
 
     <div class="header">
+
+      <header class="splash">
+
+        <img src="assets/AppleCup2018-teaser.gif" width="800">
+
+      </header>
+
       <h1 class="hed-main">Pick &rsquo;em</h1>
       <h2 class="hed-deck">
         <span class="home uppercase"><%= json.project.teams.home %></span>
          vs.
          <span class="opposing uppercase"><%= json.project.teams.opposing %></span>
        </h2>
-      <p>Got a guess?
-
-        Post it here, and see what other fans and notables are predicting.</p>
+      <p>The Cougars (-3) are favored against the Huskies for the first time since 2006. Are you a Minshew maniac? Can Jake Browning win a fourth Apple Cup and leave Washington undefeated against the Cougars? Make your prediction below and compare with our experts and your fellow fans.</p>
     </div>
 
     <div class="container">
@@ -174,7 +179,9 @@
       <%= t.include("_tiles.html") %>
     </div>
 
-    <div class="credits">Interactive by Thomas Wilburn</div>
+    <div class="credits">Development by Evan Webeck and Thomas Wilburn / The Seattle Times</div>
+
+    <%= t.include("partials/_dontMiss.html", { data: json.recirc }) %>
 
     <%= t.include("partials/_navBottom.html") %>
 
